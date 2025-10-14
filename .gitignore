@@ -3,45 +3,54 @@ screenshots/
 screenshot/
 test-output/
 build/
+
 opencart.log
-############################
-# ---- Java ----
-############################
+##############################
+## Java
+##############################
 .mtj.tmp/
 *.class
 *.jar
 *.war
 *.ear
 *.nar
-*.log
 hs_err_pid*
-replay_pid*
-
-# ---- Maven ----
+*.log
+##############################
+## Maven
+##############################
 target/
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
 pom.xml.next
+pom.xml.bak
 release.properties
 dependency-reduced-pom.xml
 buildNumber.properties
 .mvn/timing.properties
 .mvn/wrapper/maven-wrapper.jar
+.mvn
 
-# ---- Gradle ----
-.gradle/
-build/
-!gradle/wrapper/gradle-wrapper.jar
-
-# ---- Eclipse ----
-.project
-.classpath
+##############################
+## IntelliJ
+##############################
+out/
+.idea/
+.idea_modules/
+*.iml
+*.ipr
+*.iws
+##############################
+## Eclipse
+##############################
 .settings/
 bin/
 tmp/
-*.tmp
 .metadata
+.classpath
+.project
+*.tmp
 *.bak
 *.swp
 *~.nib
@@ -49,74 +58,6 @@ local.properties
 .loadpath
 .factorypath
 
-# ---- IntelliJ IDEA ----
-.idea/
-.idea/modules/
-*.iml
-*.ipr
-*.iws
-out/
-
-# ---- VS Code ----
-.vscode/
-
-# ---- OS Files ----
+## OS X
+##############################
 .DS_Store
-Thumbs.db
-
-# ---- Logs / Reports ----
-logs/
-log/
-test-output/
-allure-results/
-allure-report/
-reports/
-report/
-extent-reports/
-surefire-reports/
-emailable-report.html
-testng-failed.xml
-
-# ---- Environment / Config ----
-*.properties.local
-*.env
-.env.local
-config/
-*.bak
-*.tmp
-
-# ---- Node / Allure (if using npm for Allure CLI) ----
-node_modules/
-npm-debug.log
-package-lock.json
-
-# ---- Temporary Files ----
-*.swp
-*.swo
-*.tmp
-*.bak
-
-# ---- Screenshots ----
-screenshots/
-Screenshots/
-*.png
-*.jpg
-*.jpeg
-
-# ---- Selenium Drivers ----
-drivers/
-chromedriver.exe
-geckodriver.exe
-msedgedriver.exe
-
-# ---- Java Wrapper ----
-.mvn/
-mvnw.cmd
-mvnw
-
-#-------- OS X-----------
-.DS_Store
-
-# ============================================================
-# END
-# ============================================================
