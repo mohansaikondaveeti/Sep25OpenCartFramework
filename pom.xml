@@ -159,7 +159,7 @@
 
         <!-- Link to your TestNG suite -->
         <suiteXmlFiles>
-          <suiteXmlFile>src/test/resouces/testrunners/testng_chrome.xml</suiteXmlFile>
+          <suiteXmlFile>src/test/resources/testrunners/testng_chrome.xml</suiteXmlFile>
         </suiteXmlFiles>
         
         <argLine>
