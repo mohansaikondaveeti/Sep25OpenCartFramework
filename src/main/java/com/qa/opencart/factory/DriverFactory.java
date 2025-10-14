@@ -106,7 +106,7 @@ public class DriverFactory {
 	public Properties initProp() {
 
 		String envName = System.getProperty("env");
-
+		String projectPath = System.getProperty("user.dir");
 		FileInputStream ip = null;
 		prop = new Properties();
 
@@ -114,7 +114,7 @@ public class DriverFactory {
 
 			if (envName == null) {
 				log.warn("Environment is null, hence running in QA env...");
-				ip = new FileInputStream("./src/test/resources/config/qa.config.properties");
+				ip = new FileInputStream(projectPath + "/src/test/resources/config/qa.config.properties");
 
 			} else {
 				log.info("Running the test in: " + envName);
@@ -122,23 +122,23 @@ public class DriverFactory {
 				switch (envName) {
 
 				case "qa":
-					ip = new FileInputStream("./src/test/resources/config/qa.config.properties");
+					ip = new FileInputStream(projectPath + "/src/test/resources/config/qa.config.properties");
 					break;
 
 				case "dev":
-					ip = new FileInputStream("./src/test/resources/config/dev.config.properties");
+					ip = new FileInputStream(projectPath + "/src/test/resources/config/dev.config.properties");
 					break;
 
 				case "stage":
-					ip = new FileInputStream("./src/test/resources/config/stage.config.properties");
+					ip = new FileInputStream(projectPath + "/src/test/resources/config/stage.config.properties");
 					break;
 
 				case "uat":
-					ip = new FileInputStream("./src/test/resources/config/uat.config.properties");
+					ip = new FileInputStream(projectPath + "/src/test/resources/config/uat.config.properties");
 					break;
 
 				case "prod":
-					ip = new FileInputStream("./src/test/resources/config/prod.config.properties");
+					ip = new FileInputStream(projectPath + "/src/test/resources/config/prod.config.properties");
 					break;
 
 				default:
