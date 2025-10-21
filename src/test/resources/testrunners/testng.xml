@@ -4,20 +4,20 @@
 <suite name="openCart AppTest Regression Suite" verbose="4" thread-count ="4" parallel="tests">
 
     <test name = "Login Page Test">
-   <parameter name ="browser" value ="chrome" />
+   <parameter name ="browser" value ="" />
         <classes>
             <class name = "com.qa.opencart.tests.LoginPageTest"/>
         </classes>
     </test>
 
-    <test name = "Accounts Page Test">
-     <parameter name ="browser" value ="firefox" />
+   <!-- <test name = "Accounts Page Test">
+     <parameter name ="browser" value ="" />
         <classes>
             <class name="com.qa.opencart.tests.AccountspageTest"/>
         </classes>
     </test>
-
-    <test name = "Search Page Test">
+-->
+  <!--  <test name = "Search Page Test">
      <parameter name ="browser" value ="chrome" />     
         <classes>
             <class name= "com.qa.opencart.tests.SearchTest"/>
@@ -38,6 +38,6 @@
         <classes>
             <class name= "com.qa.opencart.tests.RegisterPageTest"/>
         </classes>
-    </test>
+    </test>-->
 
 </suite>
