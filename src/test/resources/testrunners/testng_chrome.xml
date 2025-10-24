@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="openCart AppTest Regression Suite" verbose="1" thread-count ="2" parallel="tests">
+<suite name="openCart AppTest Regression Suite" verbose="1" thread-count ="10" parallel="tests">
 
 <listeners>
 <listener class-name="com.aventstack.chaintest.plugins.ChainTestListener"/>
@@ -9,41 +9,62 @@
 <!--<listener class-name="com.qa.opencart.listeners.AnnotationTransformer"/>-->
 </listeners>
 
-   <test name = "Login Page Test">
+   <test name = "Login Page Test_chrome">
    <parameter name ="browser" value ="chrome" /> 
+   <parameter name ="browserversion" value ="126.0" />
+   <parameter name ="testname" value ="Login Page Test" />
+   
         <classes>
             <class name = "com.qa.opencart.tests.LoginPageTest"/>
         </classes>
     </test>
+    
+    <test name = "Login Page Test_firefox">
+   <parameter name ="browser" value ="firefox" /> 
+   <parameter name ="browserversion" value ="125.0" />
+    <parameter name ="testname" value ="Login Page Test" />
+        <classes>
+            <class name = "com.qa.opencart.tests.LoginPageTest"/>
+        </classes>
+    </test>
+    
+  
 
-  <!--  <test name = "Accounts Page Test">
+    <test name = "Accounts Page Test">
   <parameter name ="browser" value ="chrome" /> 
+   <parameter name ="browserversion" value ="123.0" />
+    <parameter name ="testname" value ="Accounts Page Test" />
         <classes>
             <class name="com.qa.opencart.tests.AccountspageTest"/>
         </classes>
     </test>
 
     <test name = "Search Page Test">
-     <parameter name ="browser" value ="chrome" />     
+     <parameter name ="browser" value ="firefox" />   
+      <parameter name ="browserversion" value ="124.0" />  
+      <parameter name ="testname" value ="Search Page Test" />
         <classes>
             <class name= "com.qa.opencart.tests.SearchTest"/>
         </classes>
     </test>
     
      <test name = "ProductInfo Page Test">
-      <parameter name ="browser" value ="chrome" />     
+      <parameter name ="browser" value ="firefox" />   
+       <parameter name ="browserversion" value ="105.0" /> 
+       <parameter name ="testname" value ="ProductInfo Page Test" />   
         <classes>
             <class name= "com.qa.opencart.tests.ProductsInfoPageTest"/>
         </classes>
     </test>
-    -->
     
-   <!--  <test name = "Registration Page Test">
+    
+     <test name = "Registration Page Test">
       <parameter name ="browser" value ="chrome" />
-     
+      <parameter name ="browserversion" value ="113.0" />  
+       <parameter name ="testname" value ="Registration Page Test" /> 
         <classes>
             <class name= "com.qa.opencart.tests.RegisterPageTest"/>
         </classes>
-    </test>-->
+    </test>
 
 </suite>
