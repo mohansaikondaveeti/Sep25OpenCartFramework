@@ -10,7 +10,7 @@
 </listeners>
 
    <test name = "Login Page Test">
-   <parameter name ="browser" value ="firefox" /> 
+   <parameter name ="browser" value ="chrome" /> 
         <classes>
             <class name = "com.qa.opencart.tests.LoginPageTest"/>
         </classes>
@@ -21,24 +21,24 @@
         <classes>
             <class name="com.qa.opencart.tests.AccountspageTest"/>
         </classes>
-    </test>-->
+    </test>
 
-  <!--  <test name = "Search Page Test">
+    <test name = "Search Page Test">
      <parameter name ="browser" value ="chrome" />     
         <classes>
             <class name= "com.qa.opencart.tests.SearchTest"/>
         </classes>
-    </test>-->
+    </test>
     
-  <!--   <test name = "ProductInfo Page Test">
+     <test name = "ProductInfo Page Test">
       <parameter name ="browser" value ="chrome" />     
         <classes>
             <class name= "com.qa.opencart.tests.ProductsInfoPageTest"/>
         </classes>
     </test>
+    -->
     
-    
-     <test name = "Registration Page Test">
+   <!--  <test name = "Registration Page Test">
       <parameter name ="browser" value ="chrome" />
      
         <classes>
