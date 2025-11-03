@@ -5,6 +5,8 @@
 
     <test name = "Login Page Test">
    <parameter name ="browser" value ="" />
+   <parameter name ="browserversion" value ="" />
+   <parameter name ="testname" value ="Login Page Test" />
         <classes>
             <class name = "com.qa.opencart.tests.LoginPageTest"/>
         </classes>
