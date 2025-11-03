@@ -50,7 +50,7 @@ public class LoginPageTest extends BaseTest {
 		
 	}
 	
-	@Test(enabled =false, description = "Work in progress forgotpwd")
+	@Test(enabled =false, description = "Work in progress... forgotpwd")
 	public void forgtpwd() {
 	accpage =	loginpage.doLogin(prop.getProperty("username"), prop.getProperty("password"));
 	Assert.assertTrue(accpage.getHomePageURL().contains(HOME_PAGE_FRACTION_URL));
